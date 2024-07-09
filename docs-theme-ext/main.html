@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block footer %}
+<hr>
+<p>{% if config.copyright %}
+      <small>{{ config.copyright }}<br></small>
+{% endif %}
+<small>CommBank acknowledges the Traditional Owners of the lands across Australia as the continuing custodians of Country and Culture.</br>
+    We pay our respect to First Nations peoples and their Elders, past and present.</small>
+{% if page.meta.revision_date %}
+      <small><br><i>Updated {{ page.meta.revision_date }}</i></small>
+{% endif %}
+</p>
+{% endblock %}
